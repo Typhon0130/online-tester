@@ -1,0 +1,199 @@
+#step1.container-fluid.d-flex.mt-4{style: "flex: 1"}
+  .row.flex-fill
+    .col-lg-6.pr-6.divider-border
+      .pt-3
+        %h6.fw-bold Item 1 of 8
+        %p The nurse is caring for a 61-year-old female client in the emergency department.
+      %div
+        %nav
+          #nav-tab.nav.nav-tabs.pt-4{role: "tablist"}
+            %button#nav-home-tab.nav-link.active.fw-bold.fs-5{"aria-controls" => "nav-home", "aria-selected" => "true", "data-bs-target" => "#nav-home", "data-bs-toggle" => "tab", role: "tab", type: "button"} Nurses' Notes
+            %button#nav-profile-tab.nav-link.fw-bold.fs-5{"aria-controls" => "nav-profile", "aria-selected" => "false", "data-bs-target" => "#nav-profile", "data-bs-toggle" => "tab", role: "tab", type: "button"} History and Physical
+            %button#nav-contact-tab.nav-link.fw-bold.fs-5{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-bs-target" => "#nav-contact", "data-bs-toggle" => "tab", role: "tab", type: "button"} Vital Signs
+        #nav-tabContent.tab-content.py-4.px-2
+          #nav-home.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", role: "tabpanel"}
+            %p.fw-bold.fs-5 Emergency Department
+            %table.table.border-0
+              %tbody
+                %tr
+                  %td.fw-bold.border-0 0615:
+                  %td.border-0
+                    A 61-year-old client comes to the emergency department reporting shortness of
+                    breath. She states
+                    that she had to stop and sit down while getting ready for work this morning because she suddenly
+                    felt like she could not catch her breath. She denies any cough, fever, palpitations, or
+                    lightheadedness. She denies any recent sick contacts but notes that she recently injured her leg
+                    in
+                    a minor bicycle accident.
+          #nav-profile.tab-pane.fade{"aria-labelledby" => "nav-profile-tab", role: "tabpanel"}
+            %table.table.table-bordered.border-grey.table-striped
+              %thead.fw-bold.text-center.table-bg-custom-primary
+                %tr
+                  %th{scope: "col"} Body System
+                  %th{scope: "col"} Findings
+              %tbody
+                %tr
+                  %td
+                    Neurological
+                  %td
+                    Alert; oriented to person, place, and time; slightly anxious
+                %tr
+                  %td
+                    Pulmonary
+                  %td
+                    Reports dyspnea; lung sounds diminished with fine crackles in bilateral bases; sharp chest pain on
+                    inspiration; denies cough; former 10-year smoker; quit 25 years ago
+                %tr
+                  %td
+                    Cardiovascular
+                  %td
+                    Regular rhythm; S1 and S2 present with no murmurs; 2+ peripheral pulses in bilateral upper and
+                    lower extremities; history of hypertension
+                %tr
+                  %td
+                    %span Gastrointestinal/
+                    %span Genitourinary
+                  %td
+                    Abdomen soft and nontender with bowel sounds normoactive x 4 quadrants; healed transverse lower
+                    abdominal scar; denies dysuria; she is obese
+                %tr
+                  %td
+                    Reproductive
+                  %td
+                    Post-menopausal; takes oral hormone replacement therapy to help relieve her hot flashes; history 2
+                    cesarean sections
+                %tr
+                  %td
+                    Extremities
+                  %td
+                    Right lower leg with erythema, tenderness, and 1+ pitting lower extremity edema extending to
+                    thigh; client states, “I hurt my leg when I wrecked my bicycle, and the pain and swelling are
+                    getting worse;” history of varicose veins
+                %tr
+                  %td
+                    Psychosocial
+                  %td
+                    Married with 2 adult children; works long hours at a crowded call center as a telephone operator
+          #nav-contact.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", role: "tabpanel"}
+            %table.table.table-bordered.border-grey.table-striped
+              %thead.fw-bold.text-center.table-bg-custom-primary
+                %tr
+                  %th{scope: "col"} Body System
+                  %th{scope: "col"} 0615
+              %tbody
+                %tr
+                  %td
+                    T
+                  %td
+                    99.9 F
+                    %br/
+                    (37.7 C)
+                %tr
+                  %td
+                    P
+                  %td
+                    118
+                %tr
+                  %td
+                    PR
+                  %td
+                    24
+                %tr
+                  %td
+                    BP
+                  %td
+                    108/56
+                %tr
+                  %td
+                    Pluse oximetry reading
+                  %td
+                    89% on room air
+    .col-lg-6.pt-6.px-6
+      .row
+        .col{style: "flex: 0"}
+          .arrow_image
+            = image_tag ("arrow.png")
+        .col
+          .d-flex.flex-row.gap-2.pb-4
+            %span
+              Click to highlight below the findings that require
+              %b immediate
+              follow-up by the nurse.
+          %table.table.table-bordered.border-grey.table-striped{style: "cursor: not-allowed;"}
+            %thead.fw-bold.table-bg-custom-primary
+              %tr
+                %th{scope: "col"} Body System
+                %th{scope: "col"} Findings
+            %tbody
+              %tr
+                %th
+                  Neurological
+                %td{style: "cursor: not-allowed;"}
+                  Alert; oriented to person, place, and time;
+                  %input#word1.hidden-checkbox{name: "highlightedWords[]", type: "checkbox", value: "highlightable"}/
+                  %label.highlightable-word{for: "word1"} slightly anxious
+              %tr
+                %th
+                  Pulmonary
+                %td{style: "cursor: not-allowed;"}
+                  Reports
+                  %input#dyspnea.hidden-checkbox{name: "highlightedWords[]", type: "checkbox", value: "highlightable"}/
+                  %label.highlightable-word{for: "dyspnea"} dyspnea;
+                  lung sounds diminished with
+                  %input#dyspnea.hidden-checkbox{name: "highlightedWords[]", type: "checkbox", value: "highlightable"}/
+                  %label.highlightable-word{for: "finecracklesinbilateralbases"}
+                    fine
+                    crackles in bilateral bases;
+                  %input#dyspnea.hidden-checkbox{name: "highlightedWords[]", type: "checkbox", value: "highlightable"}/
+                  %label.highlightable-word{for: "sharpchestpainoninspirationdeniescough"}
+                    sharp chest pain on
+                    inspiration;
+                  %input#sharpchestpainoninspirationdeniescough.hidden-checkbox{name: "highlightedWords[]", type: "checkbox", value: "highlightable"}/
+                  denies cough;
+                  %label.highlightable-word{for: "former10yearsmoker"} former 10-year smoker;
+                  quit 25
+                  years ago
+              %tr
+                %th
+                  Cardiovascular
+                %td{style: "cursor: not-allowed;"}
+                  Regular rhythm; S1 and S2 present with no murmurs; 2+ peripheral pulses in bilateral upper and
+                  lower extremities;
+                  %input#historyofhypertension.hidden-checkbox{name: "highlightedWords[]", type: "checkbox", value: "highlightable"}/
+                  %label.highlightable-word{for: "historyofhypertension"} history of hypertension
+              %tr
+                %th
+                  %span Gastrointestinal/
+                  %span Genitourinary
+                %td
+                  Abdomen soft and nontender with bowel sounds normoactive x 4 quadrants; healed transverse lower
+                  abdominal scar; denies dysuria; she is obese
+              %tr
+                %th
+                  Reproductive
+                %td
+                  Post-menopausal; takes oral hormone replacement therapy to help relieve her hot flashes; history 2
+                  cesarean sections
+              %tr
+                %th
+                  Extremities
+                %td
+                  Right lower leg with erythema, tenderness, and 1+ pitting lower extremity edema extending to
+                  thigh; client states, “I hurt my leg when I wrecked my bicycle, and
+                  %input#thepainandswellingaregettingworse.hidden-checkbox{name: "highlightedWords[]", type: "checkbox", value: "highlightable"}/
+                  = succeed ";\u201D" do
+                    %label.highlightable-word{for: "thepainandswellingaregettingworse"}
+                      the pain and swelling are
+                      getting worse
+              %tr
+                %th
+                  Psychosocial
+                %td
+                  Married with 2 adult children;
+                  %input#workslonghoursatacrowdedcallcenter.hidden-checkbox{name: "highlightedWords[]", type: "checkbox", value: "highlightable"}/
+                  %label.highlightable-word{for: "workslonghoursatacrowdedcallcenter"} works long hours at a crowded call center
+                  as a telephone operator
+        .row
+          %button.bg-custom-primary.submit-primary-button
+            %span.text-underline> S
+            ubmit

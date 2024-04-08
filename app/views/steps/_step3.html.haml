@@ -1,0 +1,178 @@
+#step3.container-fluid.d-none.mt-4{style: "flex: 1"}
+  .row.flex-fill
+    .col-lg-6.pr-6.divider-border
+      .pt-3
+        %h6.fw-bold Item 3 of 8
+        %p The nurse is caring for a 61-year-old female client in the emergency department.
+      %div
+        %nav
+          #nav-tab3.nav.nav-tabs.pt-4{role: "tablist"}
+            %button#nav-home-tab3.nav-link.active.fw-bold.fs-5{"aria-controls" => "nav-home3", "aria-selected" => "true", "data-bs-target" => "#nav-home3", "data-bs-toggle" => "tab", role: "tab", type: "button"} Nurses' Notes
+            %button#nav-profile-tab3.nav-link.fw-bold.fs-5{"aria-controls" => "nav-profile3", "aria-selected" => "false", "data-bs-target" => "#nav-profile3", "data-bs-toggle" => "tab", role: "tab", type: "button"} History and Physical
+            %button#nav-contact-tab3.nav-link.fw-bold.fs-5{"aria-controls" => "nav-contact3", "aria-selected" => "false", "data-bs-target" => "#nav-contact3", "data-bs-toggle" => "tab", role: "tab", type: "button"} Vital Signs
+            %button#nav-order-tab3.nav-link.fw-bold.fs-5{"aria-controls" => "nav-order3", "aria-selected" => "false", "data-bs-target" => "#nav-order3", "data-bs-toggle" => "tab", role: "tab", type: "button"} Orders
+        #nav-tabContent.tab-content.py-4.px-2
+          #nav-home3.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab3", role: "tabpanel"}
+            %p.fw-bold.fs-5 Emergency Department
+            %table.table.border-0
+              %tbody
+                %tr
+                  %td.fw-bold.border-0 0615:
+                  %td.border-0
+                    A 61-year-old client comes to the emergency department reporting shortness of
+                    breath. She states
+                    that she had to stop and sit down while getting ready for work this morning because she suddenly
+                    felt like she could not catch her breath. She denies any cough, fever, palpitations, or
+                    lightheadedness. She denies any recent sick contacts but notes that she recently injured her leg
+                    in
+                    a minor bicycle accident.
+                %tr
+                  %td.fw-bold.border-0 0645:
+                  %td.border-0
+                    AClient placed on 2 L/min nasal cannula; reports relief of dyspnea. CT
+                    pulmonary angiography and right lower extremity doppler ultrasound complete. Client now being
+                    admitted to the hospital with a diagnosis of deep vein thrombosis and pulmonary embolism, with
+                    plans to initiate an IV heparin drip once admitted to the floor.
+          #nav-profile3.tab-pane.fade{"aria-labelledby" => "nav-profile-tab3", role: "tabpanel"}
+            %table.table.table-bordered.border-grey.table-striped
+              %thead.fw-bold.text-center.table-bg-custom-primary
+                %tr
+                  %th{scope: "col"} Body System
+                  %th{scope: "col"} Findings
+              %tbody
+                %tr
+                  %td
+                    Neurological
+                  %td
+                    Alert; oriented to person, place, and time; slightly anxious
+                %tr
+                  %td
+                    Pulmonary
+                  %td
+                    Reports dyspnea; lung sounds diminished with fine crackles in bilateral bases; sharp chest pain on
+                    inspiration; denies cough; former 10-year smoker; quit 25 years ago
+                %tr
+                  %td
+                    Cardiovascular
+                  %td
+                    Regular rhythm; S1 and S2 present with no murmurs; 2+ peripheral pulses in bilateral upper and
+                    lower extremities; history of hypertension
+                %tr
+                  %td
+                    %span Gastrointestinal/
+                    %span Genitourinary
+                  %td
+                    Abdomen soft and nontender with bowel sounds normoactive x 4 quadrants; healed transverse lower
+                    abdominal scar; denies dysuria; she is obese
+                %tr
+                  %td
+                    Reproductive
+                  %td
+                    Post-menopausal; takes oral hormone replacement therapy to help relieve her hot flashes; history 2
+                    cesarean sections
+                %tr
+                  %td
+                    Extremities
+                  %td
+                    Right lower leg with erythema, tenderness, and 1+ pitting lower extremity edema extending to
+                    thigh; client states, “I hurt my leg when I wrecked my bicycle, and the pain and swelling are
+                    getting worse;” history of varicose veins
+                %tr
+                  %td
+                    Psychosocial
+                  %td
+                    Married with 2 adult children; works long hours at a crowded call center as a telephone operator
+          #nav-contact3.tab-pane.fade{"aria-labelledby" => "nav-contact-tab3", role: "tabpanel"}
+            %table.table.table-bordered.border-grey.table-striped
+              %thead.fw-bold.text-center.table-bg-custom-primary
+                %tr
+                  %th{scope: "col"}
+                  %th{scope: "col"} 0615
+                  %th{scope: "col"} 0645
+              %tbody
+                %tr
+                  %th
+                    T
+                  %td
+                    99.9 F
+                    %br/
+                    (37.7 C)
+                  %td
+                    99.9 F
+                    %br/
+                    (37.7 C)
+                %tr
+                  %th
+                    P
+                  %td
+                    118
+                  %td
+                    109
+                %tr
+                  %th
+                    PR
+                  %td
+                    24
+                  %td
+                    22
+                %tr
+                  %th
+                    BP
+                  %td
+                    108/56
+                  %td
+                    12/60
+                %tr
+                  %th
+                    Pluse oximetry reading
+                  %td
+                    89% on room air
+                  %td
+                    93% on 2L/min nasal cannula
+          #nav-order3.tab-pane.fade{"aria-labelledby" => "nav-order-tab3", role: "tabpanel"}
+            %ul.steps
+              %li
+                Maintain continuous IV heparin infusion: 25,000 units/250 mL: Start at 18 units/kg/hr (1800
+                units/hr)
+              %li Draw serum PTT every 6 hours until value reaches 70-110 seconds, then draw daily
+              %li Warfarin PO 5 mg daily; give first dose tonight at 1700
+    .col-lg-6.pt-6.px-6
+      .row
+        .col
+          .d-flex.flex-row.justify-content-center.gap-2.pb-4
+            %span
+              The nurse on the telemetry unit is planning care in anticipation of the client’s arrival. The nurse
+              reviews the new Orders and updated Nurses’ Notes and Vital Signs from 0645.
+          .row
+            .col{style: "flex: 0"}
+              .arrow_image
+                = image_tag ("arrow.png")
+            .col
+              %p Drag options from the choices below to fill in each blank in the following sentences.
+              .pt-4
+                %span The client is at
+                %b highest
+                %span
+                  risk for developing
+                  = succeed "," do
+                    %span
+                      #dropzone1.dropzone.table-bg-custom-primary
+                  %span
+                    #dropzone2.dropzone.table-bg-custom-primary
+                  %span and
+                  %span
+                    #dropzone3.dropzone.table-bg-custom-primary
+        .d-flex.flex-col.w-100.pt-4.mt-4
+          %div{style: "width: 280px; flex: 1; border: 1px solid black;"}
+            .modules-dropzone.dropzone.d-flex.flex-column.justify-content-center.align-items-center.w-100{id: "modules dropzone0", style: "min-width: 280px; flex: 1;"}
+              .text-center.w-100.table-bg-custom-primary.border-black.border-1{style: "padding: 24px; margin-bottom: 20px; border-bottom: 1px solid black;"} Word Choices
+              %p.drag.w-100{style: "margin: 4px"}
+                %a.btn.btn-default.table-bg-custom-primary{style: "padding: 24px; width: 100%"} heart failure
+              %p.drag.w-100{style: "margin: 4px"}
+                %a.btn.btn-default.table-bg-custom-primary{style: "padding: 24px; width: 100%"} respiratory filure
+              %p.drag.w-100{style: "margin: 4px"}
+                %a.btn.btn-default.table-bg-custom-primary{style: "padding: 24px; width: 100%"} peripheral arterial insufficiency
+      .row
+        %button.bg-custom-primary.submit-primary-button
+          %span.text-underline> S
+          ubmit

@@ -1,0 +1,180 @@
+#step2.container-fluid.d-none.mt-4{style: "flex: 1"}
+  .row.flex-fill
+    .col-lg-6.pr-6.divider-border
+      .pt-3
+        %h6.fw-bold Item 2 of 8
+        %p The nurse is caring for a 61-year-old female client in the emergency department.
+      %div
+        %nav
+          #nav-tab2.nav.nav-tabs.pt-4{role: "tablist"}
+            %button#nav-home-tab2.nav-link.active.fw-bold.fs-5{"aria-controls" => "nav-home2", "aria-selected" => "true", "data-bs-target" => "#nav-home2", "data-bs-toggle" => "tab", role: "tab", type: "button"} Nurses' Notes
+            %button#nav-profile-tab2.nav-link.fw-bold.fs-5{"aria-controls" => "nav-profile2", "aria-selected" => "false", "data-bs-target" => "#nav-profile2", "data-bs-toggle" => "tab", role: "tab", type: "button"} History and Physical
+            %button#nav-contact-tab2.nav-link.fw-bold.fs-5{"aria-controls" => "nav-contact2", "aria-selected" => "false", "data-bs-target" => "#nav-contact2", "data-bs-toggle" => "tab", role: "tab", type: "button"} Vital Signs
+        #nav-tabContent.tab-content.py-4.px-2
+          #nav-home2.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab2", role: "tabpanel"}
+            %p.fw-bold.fs-5 Emergency Department
+            %table.table.border-0
+              %tbody
+                %tr
+                  %td.fw-bold.border-0 0615:
+                  %td.border-0
+                    A 61-year-old client comes to the emergency department reporting shortness of
+                    breath. She states
+                    that she had to stop and sit down while getting ready for work this morning because she suddenly
+                    felt like she could not catch her breath. She denies any cough, fever, palpitations, or
+                    lightheadedness. She denies any recent sick contacts but notes that she recently injured her leg
+                    in
+                    a minor bicycle accident.
+          #nav-profile2.tab-pane.fade{"aria-labelledby" => "nav-profile-tab2", role: "tabpanel"}
+            %table.table.table-bordered.border-grey.table-striped
+              %thead.fw-bold.text-center.table-bg-custom-primary
+                %tr
+                  %th{scope: "col"} Body System
+                  %th{scope: "col"} Findings
+              %tbody
+                %tr
+                  %td
+                    Neurological
+                  %td
+                    Alert; oriented to person, place, and time; slightly anxious
+                %tr
+                  %td
+                    Pulmonary
+                  %td
+                    Reports dyspnea; lung sounds diminished with fine crackles in bilateral bases; sharp chest pain on
+                    inspiration; denies cough; former 10-year smoker; quit 25 years ago
+                %tr
+                  %td
+                    Cardiovascular
+                  %td
+                    Regular rhythm; S1 and S2 present with no murmurs; 2+ peripheral pulses in bilateral upper and
+                    lower extremities; history of hypertension
+                %tr
+                  %td
+                    %span Gastrointestinal/
+                    %span Genitourinary
+                  %td
+                    Abdomen soft and nontender with bowel sounds normoactive x 4 quadrants; healed transverse lower
+                    abdominal scar; denies dysuria; she is obese
+                %tr
+                  %td
+                    Reproductive
+                  %td
+                    Post-menopausal; takes oral hormone replacement therapy to help relieve her hot flashes; history 2
+                    cesarean sections
+                %tr
+                  %td
+                    Extremities
+                  %td
+                    Right lower leg with erythema, tenderness, and 1+ pitting lower extremity edema extending to
+                    thigh; client states, “I hurt my leg when I wrecked my bicycle, and the pain and swelling are
+                    getting worse;” history of varicose veins
+                %tr
+                  %td
+                    Psychosocial
+                  %td
+                    Married with 2 adult children; works long hours at a crowded call center as a telephone operator
+          #nav-contact2.tab-pane.fade{"aria-labelledby" => "nav-contact-tab2", role: "tabpanel"}
+            %table.table.table-bordered.border-grey.table-striped
+              %thead.fw-bold.text-center.table-bg-custom-primary
+                %tr
+                  %th{scope: "col"}
+                  %th{scope: "col"} 0615
+              %tbody
+                %tr
+                  %td
+                    T
+                  %td
+                    99.9 F
+                    %br/
+                    (37.7 C)
+                %tr
+                  %td
+                    P
+                  %td
+                    118
+                %tr
+                  %td
+                    PR
+                  %td
+                    24
+                %tr
+                  %td
+                    BP
+                  %td
+                    108/56
+                %tr
+                  %td
+                    Pluse oximetry reading
+                  %td
+                    89% on room air
+    .col-lg-6.pt-6.px-6
+      .row
+        .col{style: "flex: 0"}
+          .arrow_image
+            = image_tag ("arrow.png")
+        .col
+          .d-flex.flex-row.justify-content-center.gap-2.pb-4
+            %span
+              The nurse suspects that the client is experiencing a venous thromboembolism (VTE). For each of the
+              client findings, click to specify whether the finding indicates an increased risk for VTE that is
+              %b best
+              explained by blood flow stasis, endothelial injury, or a hypercoagulable state.
+          %table.table.table-bordered.border-grey{style: "width: 88%"}
+            %thead.fw-bold.text-center.table-bg-custom-primary
+              %tr
+                %th.d-flex.flex-column.justify-content-center.align-items-center{scope: "col"}
+                  Client Finding
+                %th{scope: "col"} Blood Flow Stasis
+                %th{scope: "col"} Endothelial Injury
+                %th{scope: "col"} Hypercoagulable State
+            %tbody
+              %tr
+                %td{scope: "row"} 1. Viaricose veins
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "Viaricose_flexRadio", type: "radio"}/
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "Viaricose_flexRadio", type: "radio"}/
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "Viaricose_flexRadio", type: "radio"}/
+              %tr
+                %td{scope: "row"} 2. Works seated at a desk job
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "deskjob_flexRadio", type: "radio"}/
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "deskjob_flexRadio", type: "radio"}/
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "deskjob_flexRadio", type: "radio"}/
+              %tr
+                %td{scope: "row"} 3. Injured leg in bicycle accident
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "Injured_flexRadio", type: "radio"}/
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "Injured_flexRadio", type: "radio"}/
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "Injured_flexRadio", type: "radio"}/
+              %tr
+                %td{scope: "row"} 4. Hormone replacement therapy
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "Hormone_flexRadio", type: "radio"}/
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "Hormone_flexRadio", type: "radio"}/
+                %td
+                  .form-check.custom-flexbox-center
+                    %input.form-check-input{name: "Hormone_flexRadio", type: "radio"}/
+          %p Note: Each row must have 1 response option selected.
+        .row
+          %button.bg-custom-primary.submit-primary-button
+            %span.text-underline> S
+            ubmit

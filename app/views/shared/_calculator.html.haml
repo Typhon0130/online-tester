@@ -1,0 +1,37 @@
+.calculator-container
+  #calculator
+    / TITLE
+    #title.text-center
+      %h5
+        %b ELECTRONIC CALCULATOR
+    / ENTRY BOX
+    #entrybox.text-right
+      #entry
+        %p#answer 0
+      #history
+        %p 0
+    / BUTTONS
+    #buttons
+      %button.red.calculator-button{value: "ac"} AC
+      %button.red.calculator-button{value: "ce"} CE
+      %button.calculator-button{value: "/"} ÷
+      %button.calculator-button{value: "*"} x
+      %button.calculator-button{value: "7"} 7
+      %button.calculator-button{value: "8"} 8
+      %button.calculator-button{value: "9"} 9
+      %button.calculator-button{value: "-"} -
+      %button.calculator-button{value: "4"} 4
+      %button.calculator-button{value: "5"} 5
+      %button.calculator-button{value: "6"} 6
+      %button.calculator-button{value: "+"} +
+      %button.calculator-button{value: "1"} 1
+      %button.calculator-button{value: "2"} 2
+      %button.calculator-button{value: "3"} 3
+      %button.calculator-button N
+      %button#zeroButton.calculator-button{value: "0"} 0
+      %button.calculator-button{value: "."} .
+      %button#equalButton.calculator-button{value: "="} =
+    / end buttons
+    #tester
+  .calculator-overlay
+  / end calculator
